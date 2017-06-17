@@ -1,0 +1,16 @@
+# Configurações aplicaveis para o menu gráfico
+
+# Esse item vai ser usado para pagamentos
+# de terrenos e alugueis.
+# Deve ser o itemstring
+terrenos_item_pag (Item para pagamentos) string default:gold_ingot
+
+# Custo do pagamento do aluguel de um terreno
+terrenos_qtd_pag_aluguel (Custo do aluguel) int 1
+
+# Esse vai ser o tempo que um jogador pode alugar um terreno
+# O aluguel vai ser renovado sempre que o jogador pagar o aluguel
+terrenos_meses_aluguel (Quantidade de meses alugado) int 3 2
+
+
+
