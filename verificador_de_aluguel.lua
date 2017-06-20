@@ -13,7 +13,7 @@
 minetest.register_abm({
 	label =  "verificar terreno",
 	nodenames = {"terrenos:ocupado"},
-	interval = 2,
+	interval = 3600,
 	chance = 1,
 	action = function(pos)
 		local meta = minetest.get_meta(pos)
@@ -33,7 +33,6 @@ minetest.register_abm({
 				terrenos.desocupar_placa(pos)
 			end
 			
-			minetest.chat_send_all("terreno ocupado a "..dif.." dias")
 		end
 	end
 })
